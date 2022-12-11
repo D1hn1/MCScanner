@@ -29,8 +29,8 @@ if cat ips &>/dev/null; then
 			if echo $scanS | grep 'minecraft-info' &>/dev/null; then
 				echo >> results.txt
 				echo "--> $x" >> results.txt
-				echo $scanS | tr '|' '\n' | grep 'minecraft-info' -A 11 | grep -Pv "N.*?ds" >> results.txt
-				echo $scanS | tr '|' '\n' | grep 'minecraft-info' -A 11 | grep -Pv "N.*?ds"
+				echo $scanS | tr '|' '\n' | grep 'minecraft-info' -A 20 | grep -Pv "N.*?ds" >> results.txt
+				echo $scanS | tr '|' '\n' | grep 'minecraft-info' -A 20 | grep -Pv "N.*?ds"
 				echo >> results.txt
 				sleep 1
 			fi
