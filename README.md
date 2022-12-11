@@ -3,6 +3,8 @@
 ```
 Usage:
   root@kali ~# chmod +x mcscanner.sh
+  root@kali ~# sudo masscan 0.0.0.0/0 -p25565 --exclude 255.255.255.255 -oL masscan.txt
+  root@kali ~# cat masscan.txt | awk '{print $4}' > ips
   root@kali ~# sudo ./mcscanner.sh
 ```
 ```
